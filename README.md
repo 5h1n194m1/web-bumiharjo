@@ -1,4 +1,4 @@
-# web-bumiharjo
+# web-balkondes
 
 Website Balkondes Bumiharjo yang sudah dimigrasikan ke CodeIgniter 4.7 dengan dua area utama:
 - landing page publik satu halaman
@@ -20,7 +20,7 @@ Website Balkondes Bumiharjo yang sudah dimigrasikan ke CodeIgniter 4.7 dengan du
 php spark serve --host 0.0.0.0 --port 8080
 ```
 
-Project `web-bumiharjo` memakai session dan base URL sendiri agar tidak bentrok dengan project CI lain seperti `C:\laragon\www\pos`. Saat ini `pos` Anda memakai `8080`, jadi `web-bumiharjo` diposisikan default di `8000`.
+Project `web-balkondes` memakai session dan base URL sendiri agar tidak bentrok dengan project CI lain seperti `C:\laragon\www\pos`. Saat ini `pos` Anda memakai `8080`, jadi `web-balkondes` diposisikan default di `8000`.
 
 ## Setup Lokal
 
@@ -30,7 +30,7 @@ Project `web-bumiharjo` memakai session dan base URL sendiri agar tidak bentrok 
 composer install
 ```
 
-2. Pastikan database MySQL `web_bumiharjo` sudah ada di Laragon.
+2. Pastikan database MySQL `balkondes_bumiharjo` sudah ada di Laragon.
 
 3. Sesuaikan `.env` jika username/password MySQL Anda berbeda.
 
@@ -55,9 +55,9 @@ php spark serve
 ## Login Admin Default
 
 - URL: `/admin/login`
-- Email: `admin@web-bumiharjo.test`
+- Email: `admin@web-balkondes.test`
 - Username: `admin`
-- Password: `admin12345`
+- Password: `Admin123!`
 
 Segera ganti password setelah first setup bila project akan dipakai lebih lanjut.
 

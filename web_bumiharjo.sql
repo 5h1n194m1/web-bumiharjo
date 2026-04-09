@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.4.3, for Win64 (x86_64)
 --
--- Host: localhost    Database: balkondes_bumiharjo
+-- Host: localhost    Database: web_bumiharjo
 -- ------------------------------------------------------
 -- Server version	8.4.3
 
@@ -74,7 +74,7 @@ CREATE TABLE `hero_slides` (
 
 LOCK TABLES `hero_slides` WRITE;
 /*!40000 ALTER TABLE `hero_slides` DISABLE KEYS */;
-INSERT INTO `hero_slides` VALUES (1,'Selamat Datang di Balkondes Bumiharjo','Jantungnya Kampoeng Dolanan & Kuliner. Temukan kembali hangatnya kebersamaan dan kenangan masa kecil di pelukan alam Borobudur.','Eksplorasi Sekarang','#layanan',NULL,1,1,'2026-04-05 01:20:10','2026-04-05 01:20:10');
+INSERT INTO `hero_slides` VALUES (1,'Selamat Datang di Balkondes Bumiharjo','Jantungnya Kampoeng Dolanan & Kuliner. Temukan kembali hangatnya kebersamaan dan kenangan masa kecil di pelukan alam Borobudur.','Eksplorasi Sekarang','#layanan',NULL,1,1,'2026-04-05 02:14:39','2026-04-05 02:14:39');
 /*!40000 ALTER TABLE `hero_slides` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -103,7 +103,7 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES (1,'2026-04-05-010100','App\\Database\\Migrations\\CreateUsersTable','default','App',1775326772,1),(2,'2026-04-05-010110','App\\Database\\Migrations\\CreateSiteSettingsTable','default','App',1775326773,1),(3,'2026-04-05-010120','App\\Database\\Migrations\\CreateHeroSlidesTable','default','App',1775326773,1),(4,'2026-04-05-010130','App\\Database\\Migrations\\CreateServicesTable','default','App',1775326773,1),(5,'2026-04-05-010140','App\\Database\\Migrations\\CreateGalleryItemsTable','default','App',1775326773,1);
+INSERT INTO `migrations` VALUES (1,'2026-04-05-010100','App\\Database\\Migrations\\CreateUsersTable','default','App',1775330021,1),(2,'2026-04-05-010110','App\\Database\\Migrations\\CreateSiteSettingsTable','default','App',1775330021,1),(3,'2026-04-05-010120','App\\Database\\Migrations\\CreateHeroSlidesTable','default','App',1775330021,1),(4,'2026-04-05-010130','App\\Database\\Migrations\\CreateServicesTable','default','App',1775330021,1),(5,'2026-04-05-010140','App\\Database\\Migrations\\CreateGalleryItemsTable','default','App',1775330021,1);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -133,7 +133,7 @@ CREATE TABLE `services` (
 
 LOCK TABLES `services` WRITE;
 /*!40000 ALTER TABLE `services` DISABLE KEYS */;
-INSERT INTO `services` VALUES (1,'🏠','Penginapan & Homestay','Bayangkan bangun tidur disambut embun pagi dan pemandangan sawah yang menyejukkan mata. Menginap di homestay kami berarti kembali ke pelukan alam, menikmati ketenangan sejati dengan fasilitas yang nyaman dan terasa seperti di rumah sendiri.',1,1,'2026-04-05 01:20:10','2026-04-05 01:20:10'),(2,'🎪','Venue Acara Spesial','Jadikan hamparan sawah dan nuansa tradisional pendopo kami sebagai saksi hari bahagiamu. Area kami yang luas dan asri sangat sempurna untuk disewa sebagai venue Wedding, Reuni, Bukber, Meeting, hingga acara komunitas.',2,1,'2026-04-05 01:20:10','2026-04-05 01:20:10'),(3,'🚙','Eksplorasi Mobil VW','Nikmati semilir angin melintasi hijaunya persawahan dan sudut-sudut eksotis Borobudur dengan gaya klasik. Trip menggunakan mobil VW Safari kami siap membawamu bertualang menyusuri pesona desa.',3,1,'2026-04-05 01:20:10','2026-04-05 01:20:10');
+INSERT INTO `services` VALUES (1,'🏠','Penginapan & Homestay','Bayangkan bangun tidur disambut embun pagi dan pemandangan sawah yang menyejukkan mata. Menginap di homestay kami berarti kembali ke pelukan alam, menikmati ketenangan sejati dengan fasilitas yang nyaman dan terasa seperti di rumah sendiri.',1,1,'2026-04-05 02:14:39','2026-04-05 02:14:39'),(2,'🎪','Venue Acara Spesial','Jadikan hamparan sawah dan nuansa tradisional pendopo kami sebagai saksi hari bahagiamu. Area kami yang luas dan asri sangat sempurna untuk disewa sebagai venue Wedding, Reuni, Bukber, Meeting, hingga acara komunitas.',2,1,'2026-04-05 02:14:39','2026-04-05 02:14:39'),(3,'🚙','Eksplorasi Mobil VW','Nikmati semilir angin melintasi hijaunya persawahan dan sudut-sudut eksotis Borobudur dengan gaya klasik. Trip menggunakan mobil VW Safari kami siap membawamu bertualang menyusuri pesona desa.',3,1,'2026-04-05 02:14:39','2026-04-05 02:14:39');
 /*!40000 ALTER TABLE `services` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -171,7 +171,7 @@ CREATE TABLE `site_settings` (
 
 LOCK TABLES `site_settings` WRITE;
 /*!40000 ALTER TABLE `site_settings` DISABLE KEYS */;
-INSERT INTO `site_settings` VALUES (1,'Balkondes Bumiharjo','Selamat Datang di Balkondes Bumiharjo','Jantungnya Kampoeng Dolanan & Kuliner. Temukan kembali hangatnya kebersamaan dan kenangan masa kecil di pelukan alam Borobudur.','Merawat Tradisi, Merayakan Kebersamaan','Di Balkondes & Homestay Bumiharjo, waktu seolah berjalan lebih lambat. Kami bukan sekadar tempat singgah, melainkan ruang untuk bernostalgia. Sebagai Kampoeng Dolanan & Kuliner, kami menghidupkan kembali permainan tradisional yang sarat makna dan menyajikan resep rahasia warisan leluhur. Di sini, setiap sudut dirancang agar kamu bisa tertawa lepas, bersantai, dan sejenak melupakan penatnya rutinitas.','Sempurnakan Momenmu di Tengah Hamparan Hijau','Dikelilingi oleh indahnya lanskap sawah yang luas membentang dan hembusan angin segar pedesaan, Balkondes Bumiharjo siap melengkapi setiap cerita perjalanan dan perayaanmu.','Mari Berkunjung','Jl. Sentanu, Jetis Gayu, Bumiharjo, Kec. Borobudur, Kabupaten Magelang, Jawa Tengah 56553.','','Buka Setiap Hari (08.00 - 20.00 WIB)','6281234567890','Halo admin Balkondes Bumiharjo, saya ingin bertanya tentang reservasi.','2026-04-05 01:20:10','2026-04-05 01:20:10');
+INSERT INTO `site_settings` VALUES (1,'Balkondes Bumiharjo','Selamat Datang di Balkondes Bumiharjo','Jantungnya Kampoeng Dolanan & Kuliner. Temukan kembali hangatnya kebersamaan dan kenangan masa kecil di pelukan alam Borobudur.','Merawat Tradisi, Merayakan Kebersamaan','Di Balkondes & Homestay Bumiharjo, waktu seolah berjalan lebih lambat. Kami bukan sekadar tempat singgah, melainkan ruang untuk bernostalgia. Sebagai Kampoeng Dolanan & Kuliner, kami menghidupkan kembali permainan tradisional yang sarat makna dan menyajikan resep rahasia warisan leluhur. Di sini, setiap sudut dirancang agar kamu bisa tertawa lepas, bersantai, dan sejenak melupakan penatnya rutinitas.','Sempurnakan Momenmu di Tengah Hamparan Hijau','Dikelilingi oleh indahnya lanskap sawah yang luas membentang dan hembusan angin segar pedesaan, Balkondes Bumiharjo siap melengkapi setiap cerita perjalanan dan perayaanmu.','Mari Berkunjung','Jl. Sentanu, Jetis Gayu, Bumiharjo, Kec. Borobudur, Kabupaten Magelang, Jawa Tengah 56553.','','Buka Setiap Hari (08.00 - 20.00 WIB)','6281234567890','Halo admin Balkondes Bumiharjo, saya ingin bertanya tentang reservasi.','2026-04-05 02:14:39','2026-04-05 02:14:39');
 /*!40000 ALTER TABLE `site_settings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -205,7 +205,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Admin Web Balkondes','admin','admin@web-balkondes.test','$2y$10$6L44BZAe3Rw4DoPrCiOPcO/Mar3gDi5AWWMCb//bKqrwyFMsfTqce','admin',1,NULL,'2026-04-05 01:20:10','2026-04-05 01:20:10');
+INSERT INTO `users` VALUES (1,'Admin Web Bumiharjo','admin','admin@web-bumiharjo.test','$2y$10$Cfkhdy76qsz8XBh128Qu9O7ksBYBZmPbCnR1f4HO/91quxz8Y5QGa','admin',1,NULL,'2026-04-05 02:14:39','2026-04-05 02:14:39');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -218,4 +218,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-06  0:52:06
+-- Dump completed on 2026-04-09 22:59:26

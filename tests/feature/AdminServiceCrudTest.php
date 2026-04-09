@@ -20,8 +20,8 @@ final class AdminServiceCrudTest extends CIUnitTestCase
             ->withSession([
                 'admin_logged_in' => true,
                 'admin_id' => 1,
-                'admin_name' => 'Admin Web Bumiharjo',
-                'admin_email' => 'admin@web-bumiharjo.test',
+                'admin_name' => 'Admin Web Balkondes',
+                'admin_email' => 'admin@web-balkondes.test',
             ])
             ->post('/admin/services', [
                 'icon' => '☕',

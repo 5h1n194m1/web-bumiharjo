@@ -118,7 +118,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Admin Web Balkondes',
                 'username' => 'admin',
                 'email' => 'admin@web-balkondes.test',
-                'password' => password_hash('admin12345', PASSWORD_DEFAULT),
+            'password' => password_hash('Admin123!', PASSWORD_DEFAULT),
                 'role' => 'admin',
                 'is_active' => 1,
             ]);

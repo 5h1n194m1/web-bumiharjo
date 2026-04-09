@@ -31,7 +31,7 @@ class Session extends BaseConfig
      *
      * The session cookie name, must contain only [0-9a-z_-] characters
      */
-    public string $cookieName = 'web_bumiharjo_session';
+    public string $cookieName = 'web_balkondes_session';
 
     /**
      * --------------------------------------------------------------------------
@@ -58,7 +58,7 @@ class Session extends BaseConfig
      *
      * IMPORTANT: You are REQUIRED to set a valid save path!
      */
-    public string $savePath = 'C:/laragon/www/balkondes-bumiharjo/writable/session';
+    public string $savePath = 'C:/laragon/www/web-balkondes/writable/session';
 
     /**
      * --------------------------------------------------------------------------

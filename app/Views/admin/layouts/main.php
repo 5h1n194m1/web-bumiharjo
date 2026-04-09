@@ -222,7 +222,7 @@
 <div class="app">
     <aside class="sidebar">
         <a href="<?= site_url('admin/dashboard') ?>" class="brand">
-            <strong>web-bumiharjo</strong>
+            <strong>web-balkondes</strong>
             <span>CMS sederhana untuk website Balkondes</span>
         </a>
 

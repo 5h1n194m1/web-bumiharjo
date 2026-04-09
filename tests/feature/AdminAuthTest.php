@@ -19,14 +19,14 @@ final class AdminAuthTest extends CIUnitTestCase
         $result = $this->get('/admin/login');
 
         $result->assertStatus(200);
-        $result->assertSee('Admin web-bumiharjo');
+        $result->assertSee('Admin web-balkondes');
     }
 
     public function testAdminCanLoginWithSeededCredentials(): void
     {
         $result = $this->post('/admin/login', [
             'login' => 'admin@web-balkondes.test',
-            'password' => 'admin12345',
+            'password' => 'Admin123!',
         ]);
 
         $result->assertRedirectTo(site_url('admin/dashboard'));

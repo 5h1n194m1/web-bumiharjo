@@ -6,7 +6,7 @@ final class WhatsappLinkHelperTest extends CIUnitTestCase
 {
     public function testWhatsappLinkSanitizesNumberAndBuildsMessage(): void
     {
-        helper('web_bumiharjo');
+        helper('web_balkondes');
 
         $link = whatsapp_link([
             'whatsapp_number' => '0812-3456-7890',
