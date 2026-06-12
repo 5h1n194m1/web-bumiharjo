@@ -56,7 +56,7 @@
     </div>
 
     <div class="card" style="padding:20px;background:#f9fbfc;">
-        <h3 style="margin-top:0;">Tentang dan Pengalaman</h3>
+        <h3 style="margin-top:0;">Tentang dan Fasilitas</h3>
         <div class="grid-2">
             <div class="field">
                 <label>Label Tentang</label>
@@ -74,7 +74,7 @@
         <div class="grid-2">
             <div class="field">
                 <label>Label Layanan</label>
-                <input type="text" name="services_label" value="<?= esc(old_or_value('services_label', $setting['services_label'] ?? 'Pengalaman Tak Terlupakan')) ?>">
+                <input type="text" name="services_label" value="<?= esc(old_or_value('services_label', $setting['services_label'] ?? 'Fasilitas')) ?>">
             </div>
             <div class="field">
                 <label>Judul Layanan</label>

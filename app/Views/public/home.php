@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title><?= esc(setting_value($settings, 'company_name', 'Balkondes Bumiharjo')) ?> | Desa Wisata, Penginapan, dan Venue Acara</title>
-    <meta name="description" content="<?= esc(setting_value($settings, 'hero_subheadline', 'Website resmi Balkondes Bumiharjo untuk penginapan, venue acara, dan pengalaman wisata hangat di kawasan Borobudur.')) ?>">
+    <meta name="description" content="<?= esc(setting_value($settings, 'hero_subheadline', 'Website resmi Balkondes Bumiharjo untuk penginapan, venue acara, dan nuansa wisata hangat di kawasan Borobudur.')) ?>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -250,9 +250,9 @@
     $aboutLabel = setting_value($settings, 'about_label', 'Nuansa Desa Wisata');
     $aboutTitle = setting_value($settings, 'about_title', 'Lebih Dari Sekadar Tempat Singgah');
     $aboutContent = setting_value($settings, 'about_content', 'Balkondes Bumiharjo menghadirkan suasana desa yang tenang, nyaman, dan akrab. Di sini, tamu dapat beristirahat, menyusun acara, menikmati kuliner, hingga merasakan ritme Borobudur dengan cara yang lebih dekat dan lebih hangat.');
-    $servicesLabel = setting_value($settings, 'services_label', 'Pengalaman Tak Terlupakan');
-    $servicesTitle = setting_value($settings, 'services_title', 'Pengalaman Tak Terlupakan');
-    $servicesIntro = setting_value($settings, 'services_intro', 'Rangkaian pengalaman yang disusun untuk tamu yang datang mencari ketenangan, kebersamaan, maupun momentum acara yang berkesan.');
+    $servicesLabel = setting_value($settings, 'services_label', 'Fasilitas');
+    $servicesTitle = setting_value($settings, 'services_title', 'Fasilitas');
+    $servicesIntro = setting_value($settings, 'services_intro', 'Rangkaian fasilitas yang disusun untuk tamu yang datang mencari kenyamanan, kebersamaan, maupun kebutuhan acara yang berkesan.');
     $galleryLabel = setting_value($settings, 'gallery_label', 'Galeri');
     $galleryTitle = setting_value($settings, 'gallery_title', 'Keindahan yang terasa dekat dan tenang.');
     $galleryIntro = setting_value($settings, 'gallery_intro', 'Sudut-sudut visual Balkondes Bumiharjo yang hangat, tenang, dan cocok untuk penginapan maupun acara.');
@@ -327,7 +327,7 @@
         if ($title === '') continue;
         $serviceCards[] = [
             'title'       => $title,
-            'description' => $description !== '' ? $description : 'Nikmati pengalaman yang disusun hangat untuk tamu Balkondes Bumiharjo.',
+            'description' => $description !== '' ? $description : 'Nikmati fasilitas yang disusun hangat untuk tamu Balkondes Bumiharjo.',
             'image'       => ! empty($service['image_path']) ? media_url($service['image_path']) : $pickVisual($index + 1),
             'points'      => array_values(array_filter(array_map('trim', preg_split('/\r\n|\r|\n/', (string) ($service['highlight_points'] ?? '')) ?: []))),
         ];
@@ -345,7 +345,7 @@
             ['title'=>'Penginapan dan Homestay','description'=>'Kamar dan area inap yang tenang untuk tamu yang ingin beristirahat dekat Borobudur dengan suasana desa yang terasa akrab.','image'=>$pickVisual(0),'points'=>['Nuansa hangat dan tenang','Cocok untuk staycation keluarga','Nyaman untuk tamu rombongan kecil']],
             ['title'=>'Kuliner dan Jamuan','description'=>'Sajian yang cocok untuk makan bersama, acara keluarga, hingga penyambutan tamu dalam suasana yang lebih personal.','image'=>$pickVisual(1),'points'=>['Nuansa makan bersama lebih intim','Pas untuk jamuan komunitas','Bisa dikombinasikan dengan acara di lokasi']],
             ['title'=>'Venue Acara','description'=>'Ruang dan suasana yang mendukung meeting, gathering, wedding, atau kegiatan budaya dengan latar desa wisata.','image'=>$pickVisual(2),'points'=>['Fleksibel untuk berbagai kebutuhan acara','Visual lokasi kuat untuk dokumentasi','Suasana tenang dan representatif']],
-            ['title'=>'Eksplorasi Borobudur','description'=>'Mulai perjalanan ke kawasan Borobudur dari titik yang lebih hangat, dekat, dan penuh cerita lokal.','image'=>$pickVisual(3),'points'=>['Dekat dengan destinasi utama','Cocok untuk itinerary wisata','Memberi pengalaman desa yang lebih otentik']],
+            ['title'=>'Eksplorasi Borobudur','description'=>'Mulai perjalanan ke kawasan Borobudur dari titik yang lebih hangat, dekat, dan penuh cerita lokal.','image'=>$pickVisual(3),'points'=>['Dekat dengan destinasi utama','Cocok untuk itinerary wisata','Memberi nuansa desa yang lebih otentik']],
         ];
     }
 
@@ -380,7 +380,7 @@
             <a class="max-w-[180px] text-sm font-semibold tracking-[0.12em] text-[var(--muted)] sm:max-w-none sm:text-[13px]" href="#home"><?= esc($companyName) ?></a>
             <div class="hidden items-center gap-7 text-sm text-[var(--muted)] md:flex">
                 <a href="#tentang"    class="transition hover:text-[var(--ink)]">Tentang</a>
-                <a href="#pengalaman" class="transition hover:text-[var(--ink)]">Pengalaman</a>
+                <a href="#fasilitas" class="transition hover:text-[var(--ink)]">Fasilitas</a>
                 <a href="#galeri"     class="transition hover:text-[var(--ink)]">Galeri</a>
                 <a href="#lokasi"     class="transition hover:text-[var(--ink)]">Lokasi</a>
             </div>
@@ -405,7 +405,7 @@
              aria-label="Menu navigasi">
             <div class="grid gap-2 text-sm font-semibold text-[var(--muted)]">
                 <a class="rounded-[1rem] px-3 py-3 transition hover:bg-[var(--surface-soft)]" href="#tentang">Tentang</a>
-                <a class="rounded-[1rem] px-3 py-3 transition hover:bg-[var(--surface-soft)]" href="#pengalaman">Pengalaman</a>
+                <a class="rounded-[1rem] px-3 py-3 transition hover:bg-[var(--surface-soft)]" href="#fasilitas">Fasilitas</a>
                 <a class="rounded-[1rem] px-3 py-3 transition hover:bg-[var(--surface-soft)]" href="#galeri">Galeri</a>
                 <a class="rounded-[1rem] px-3 py-3 transition hover:bg-[var(--surface-soft)]" href="#lokasi">Lokasi</a>
                 <a class="rounded-[1rem] bg-[var(--surface-soft)] px-3 py-3 text-[var(--ink)]"
@@ -535,8 +535,8 @@
     </section>
     <?php endif; ?>
 
-    <!-- ── PENGALAMAN ── -->
-    <section id="pengalaman" class="bg-[var(--surface-soft)] py-16 sm:py-24">
+    <!-- ── FASILITAS ── -->
+    <section id="fasilitas" class="bg-[var(--surface-soft)] py-16 sm:py-24">
         <div class="shell">
             <div class="fade-up max-w-2xl">
                 <p class="section-label"><?= esc($servicesLabel) ?></p>
@@ -693,7 +693,7 @@
                 <p class="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--gold-soft)]">Menu</p>
                 <div class="mt-4 space-y-3 text-sm text-white/70">
                     <a class="block transition hover:text-white" href="#tentang">Tentang</a>
-                    <a class="block transition hover:text-white" href="#pengalaman">Pengalaman</a>
+                    <a class="block transition hover:text-white" href="#fasilitas">Fasilitas</a>
                     <a class="block transition hover:text-white" href="#galeri">Galeri</a>
                     <a class="block transition hover:text-white" href="#lokasi">Lokasi</a>
                 </div>
@@ -822,7 +822,7 @@
     const PRM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const IS_DESKTOP = () => window.innerWidth >= 1024;
     const NAV_BAR = document.querySelector('nav');
-    const SMART_SNAP_IDS = ['home', 'tentang', 'pengalaman', 'galeri', 'lokasi'];
+    const SMART_SNAP_IDS = ['home', 'tentang', 'fasilitas', 'galeri', 'lokasi'];
     const SMART_SNAP_TARGETS = SMART_SNAP_IDS.map((id) => document.getElementById(id)).filter(Boolean);
     let smartSnapTimer = null;
     let smartSnapLocked = false;
